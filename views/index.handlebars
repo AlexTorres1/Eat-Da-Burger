@@ -1,16 +1,36 @@
 <div class="container bg">
 	
 	<div class="row">
-	    <div class="center col-sm-12">
-			<img src="assets/img/" alt="Burger Time!">
+	    <div class="center col s12">
+			<i class="fas fa-hamburger" style="font-size: 100px;
+    color: aquamarine;"></i>
 	        <h1>Burger Time!</h1>
 	        <p></p>
 	    </div>
   	</div>
-	<!-- end .row -->
 
+	<!-- end .row -->
+<div class="row">
+	    <div class="center col-sm-12">
+
+			<h2>Add A Burger!</h2>
+
+			<form class="create-update-form" action="/" method="POST">
+
+			  <div class="form-group">
+			    <p>Enter a burger you want to order and click the Submit Order button.</p>
+			    <input type="text" id="ca" name="burger_name">
+			  </div>
+			  
+			  <a class="waves-effect waves-light btn">Submit Order</a>
+			</form>
+
+	    </div>
+	
+  	</div>
+	<!-- end .row -->
 	<div class="row">
-	    <div class="col-sm-6">
+	    <div class="col s6 text-center">
 
 			<br>
 			<h2>Burgers Ready!</h2>
@@ -24,7 +44,7 @@
 
 			        <form action="/{{this.id}}" method="POST">
 			          <input type="hidden" name="devoured" value="true">
-			          <button class="btn-primary" type="submit">Devour It!</button>
+			          <a class="waves-effect waves-light btn">Devour It!</a>
 			        </form>
 
 			      </li>
@@ -34,7 +54,7 @@
 
 	    </div>
 
-	    <div class="col-sm-6">
+	    <div class="col s6">
 
 			<h2>Eaten!</h2>
 			
@@ -53,24 +73,6 @@
   	</div>
 	<!-- end .row -->
 
-	<div class="row">
-	    <div class="center col-sm-12">
-
-			<h2>Add A Burger!</h2>
-
-			<form class="create-update-form" action="/" method="POST">
-
-			  <div class="form-group">
-			    <p>Enter a burger you want to order and click the Submit Order button.</p>
-			    <input type="text" id="ca" name="burger_name">
-			  </div>
-			  
-			  <button class="btn-primary" type="submit">Submit Order</button>
-			</form>
-
-	    </div>
 	
-  	</div>
-	<!-- end .row -->
 
 </div>
